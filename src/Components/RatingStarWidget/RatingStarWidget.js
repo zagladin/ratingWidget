@@ -16,7 +16,10 @@ const RatingStarWidget = ({rating}) => {
 
     const isInteger = Number.isInteger(numberRating);
 
-    const svgOffset = `${(numberRating - Math.floor(numberRating)).toFixed(1) * 100}%`;
+    const svgOffset =
+        numberRating
+            ? `${(numberRating - Math.floor(numberRating)).toFixed(1) * 100}%`
+            : '0%';
 
     if (rating === 0) {
       return <StarIcon
