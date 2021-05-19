@@ -1,0 +1,38 @@
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(98 155 156 / 80%);
+  font-size: 48px;
+  line-height: 100%;
+}
+
+.inputBlock {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+
+  input {
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 12px 0 0 12px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+}
+
+.ratingBlock {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
