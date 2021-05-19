@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ratingWidget/static/css/main.993c3b9a.chunk.css",
-    "main.js": "/ratingWidget/static/js/main.00c84d12.chunk.js",
-    "main.js.map": "/ratingWidget/static/js/main.00c84d12.chunk.js.map",
+    "main.js": "/ratingWidget/static/js/main.26ccf6ec.chunk.js",
+    "main.js.map": "/ratingWidget/static/js/main.26ccf6ec.chunk.js.map",
     "runtime-main.js": "/ratingWidget/static/js/runtime-main.04851b21.js",
     "runtime-main.js.map": "/ratingWidget/static/js/runtime-main.04851b21.js.map",
     "static/js/2.78114eeb.chunk.js": "/ratingWidget/static/js/2.78114eeb.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.04851b21.js",
     "static/js/2.78114eeb.chunk.js",
     "static/css/main.993c3b9a.chunk.css",
-    "static/js/main.00c84d12.chunk.js"
+    "static/js/main.26ccf6ec.chunk.js"
   ]
 }
