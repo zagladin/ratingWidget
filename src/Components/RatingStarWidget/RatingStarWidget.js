@@ -4,7 +4,7 @@ import StarIcon from '../Icon/StarIcon';
 
 const RatingStarWidget = ({rating}) => {
 
-  const fillTheStars = (starPosition) => {
+  function fillingTheStart(starPosition) {
     const customStarStyle = {
       marginRight: 3,
     };
@@ -15,8 +15,8 @@ const RatingStarWidget = ({rating}) => {
     const numberRating = parseFloat(rating);
 
     const isInteger = Number.isInteger(numberRating);
-    const offset = `${(numberRating - Math.floor(numberRating)).toFixed(1) *
-    100}%`;
+
+    const svgOffset = `${(numberRating - Math.floor(numberRating)).toFixed(1) * 100}%`;
 
     if (rating === 0) {
       return <StarIcon
@@ -26,15 +26,14 @@ const RatingStarWidget = ({rating}) => {
     }
     if (starPosition === 1 && rating < 1) {
       return <StarIcon
-          offset={offset}
+          offset={svgOffset}
           fill={redColor}
           halfFilled={true}
           style={customStarStyle}
       />;
-    }
-    if (starPosition <= rating || starPosition === rating) {
+    } else if (starPosition <= rating || starPosition === rating) {
       return <StarIcon
-          offset={offset}
+          offset={svgOffset}
           fill={redColor}
           style={customStarStyle}
       />;
@@ -50,14 +49,14 @@ const RatingStarWidget = ({rating}) => {
           style={customStarStyle}
       />;
     }
-  };
+  }
 
-  const renderStarsAmount = () => {
+  const renderStars = () => {
     let stars = [];
     for (let i = 1; i < 6; i++) {
       stars.push(
           <Fragment key={i}>
-            {fillTheStars(i)}
+            {fillingTheStart(i)}
           </Fragment>,
       );
     }
@@ -66,7 +65,7 @@ const RatingStarWidget = ({rating}) => {
 
   return (
       <div className={styles.starsWidget}>
-        {renderStarsAmount()}
+        {renderStars()}
       </div>
   );
 };
